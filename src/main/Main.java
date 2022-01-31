@@ -14,11 +14,15 @@ public class Main {
         }
         //QuickSort qsort = new QuickSort();
         System.out.println("Before sort:");
-        QuickSort.printArray(numbers);
-        QuickSort.quicksort(numbers);
-        System.out.println("After sort:");
-        QuickSort.printArray(numbers);
+        IntegerArrayOperation.printArray(numbers);
+        System.out.println(IntegerArrayOperation.isSorted(numbers));
 
+        IntegerArrayOperation.sortArray(numbers);
+        System.out.println("After sort:");
+        IntegerArrayOperation.printArray(numbers);
+        System.out.println(IntegerArrayOperation.isSorted(numbers));
+
+        System.out.println("Second largest number " + IntegerArrayOperation.secondLargestNumber(numbers));
 
     }
 }

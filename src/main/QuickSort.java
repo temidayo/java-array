@@ -1,5 +1,6 @@
 package main;
 
+import java.util.Arrays;
 import java.util.Random;
 
 
@@ -9,6 +10,8 @@ public class QuickSort {
     public static void quicksort(int[] array) {
         quicksort(array, 0, array.length - 1);
     }
+
+
 
     private static void quicksort(int[] array, int lowIndex, int highIndex) {
 
@@ -62,12 +65,5 @@ public class QuickSort {
         int temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
-    }
-
-    public static void printArray(int[] numbers) {
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] +  " ");
-        }
-        System.out.println();
     }
 }
