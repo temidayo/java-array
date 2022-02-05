@@ -33,4 +33,20 @@ public class IntegerArrayOperation {
         sortArray(array);
         return array[array.length -2];
     }
+
+    /**
+     * Number of occurence of an element in an array
+     * @param array - array of integer
+     * @param needle - element to search
+     * @return int
+     */
+    public static int countElement(int[] array, int needle){
+        int count = 0;
+        for(int e: array){
+            if(e == needle){
+                count++;
+            }
+        }
+        return count;
+    }
 }

@@ -12,7 +12,10 @@ public class Main {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = rand.nextInt(100);
         }
-        //QuickSort qsort = new QuickSort();
+
+
+
+
         System.out.println("Before sort:");
         IntegerArrayOperation.printArray(numbers);
         System.out.println(IntegerArrayOperation.isSorted(numbers));
